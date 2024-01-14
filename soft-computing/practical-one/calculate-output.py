@@ -18,7 +18,16 @@ weights = []
 
 for i in range(0, n):
     ele = float(input())
-    inputs.append(ele)
+    weights.append(ele)
 
-print(inputs)
+print(weights)
+
+# In[4]:
+print("The net input can be calculated as Yin = x1w1 + x2w2 + x3w3")
+# In[5]:
+Yin = []
+for i in range(0, n):
+    Yin.append(inputs[i]*weights[i])
+
+print(round(sum(Yin),3))
 
